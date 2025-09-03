@@ -17,3 +17,8 @@ a ser sometido a pruebas, lo cual lleva a perdidas de tiempo en el caso de haber
 
 * **Pregunta retadora:** señala un **contexto real** donde un enfoque cercano a cascada sigue siendo razonable (por ejemplo, sistemas con certificaciones 
 regulatorias estrictas o fuerte acoplamiento hardware). Expón **dos criterios verificables** y **los trade-offs** (velocidad vs. conformidad/seguridad).
+Proyectos de construccion de infraestructura donde se necesita cumplir requisitos tecnicos, realizar expedientes amplios y detallados, con ejecucion secuencial. Trade-offs:
+ La velocidad con la que se desarrolla esa clase de proyectos es lenta, pero confiable en cuanto se cumplan los requisitos tecnicos.
+En caso de software, podemos notar el de los cajeros automaticos, estos requieren certificados de seguridad en cuanto a sus funciones de encriptacion y autenticacion, adicional
+a ello las pruebas correspondientes para su buen funcionamiento. Trade-offs: al igual que en el ejemplo anterior, se sacrifica velocidad de entrega por seguridad y fiabilidad en 
+el producto.  

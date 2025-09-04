@@ -38,3 +38,18 @@ se emplea mayor tiempo en entender y ordenar el codigo para su correcta ejecucio
  podemos asegurar su correcto funcionamiento, esto hace que los errores sean recurrentes, degradacion repetitiva.
 * Seguridad como auditoria tardia: en este no se ejecutan pruebas al proyecto antes de entregarlo al usuario final, sino que a medida que se presentan los fallos se implementan las mejoras. Incidentes: mayor MTTR, se al estar en 
 constante actualizacion para reparar fallos, el proyecto queda suspendido. Retrabajos, realizar parches sobre el codigo no probado. Los parches no aseguran que los errores no se vuelvan a presentar, se cae en degradacion repetitiva.
+
+#### 4.3 Principios y beneficios de DevOps (CI/CD, automatización, colaboración; Agile como precursor)
+
+* Describe CI y CD destacando **tamaño de cambios**, **pruebas automatizadas cercanas al código** y **colaboración**.
+* CI (integracion continua) se trabajan pequeños bloques de codigo, estos sometidos a pruebas automatizadas cercanas al codigo. Esto se desarrolla en un sistema de control de 
+versiones como GitHub donde varios desarrolladores pueden modificar el codigo mediante ramas sin alterar la rama principal. 
+* CD (entrega continua) implementa el codigo compartido por CI, libera cambios en el codigo al usuario final. 
+* La colaboracion en constante entre ambos y se complementan, esto genera entregas de software mas eficientes.
+
+* Explica cómo **una práctica Agile** (reuniones diarias, retrospectivas) alimenta decisiones del pipeline (qué se promueve, qué se bloquea).
+* Las reuniones diarias mejoran las comunicacion entre los colaboradores del proyecto, esto permite una mejor coordinacion en el avance del proyecto. Se bloquea el trabajo por
+ secciones, es decir las diferentes areas se involucran en el proyecto (evitan la metologia cascada).
+
+* Propón **un indicador observable** (no financiero) para medir mejora de colaboración Dev-Ops (por ejemplo, tiempo desde PR listo hasta despliegue en entorno de pruebas; proporción de rollbacks sin downtime).
+

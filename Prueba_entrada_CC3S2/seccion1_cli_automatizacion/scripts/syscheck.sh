@@ -5,8 +5,8 @@ trap 'echo "[ERROR] Falló en línea $LINENO" >&2' ERR
 mkdir -p reports
 
 # TODO: HTTP-guarda headers y explica código en 2-3 líneas al final del archivo
-ESTADO = $(curl -Is https://example.com | head -n 1)  # Cogemos la primera linea de las cabeceras
-CODIGO_HTTP = $(echo "$ESTADO" | awk '{print $2}') # Dividimos la linea en bloques e imprimimos el 2do que contiene el codigo http
+ESTADO=$(curl -Is https://example.com | head -n 1)  # Cogemos la primera linea de las cabeceras
+CODIGO_HTTP=$(echo "$ESTADO" | awk '{print $2}') # Dividimos la linea en bloques e imprimimos el 2do que contiene el codigo http
 {
   echo "curl -I example.com"
   curl -Is https://example.com | sed '/^\r$/d'

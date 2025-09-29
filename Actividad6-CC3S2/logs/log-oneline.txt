@@ -1,0 +1,4 @@
+a2590bd Resuelve conflicto entre main y feature/test en main.py
+c24ed2d Cambio en main.py desde feature/test
+886f10a Agrega main.py base
+9db5680 Commit inicial con README.md

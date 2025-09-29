@@ -1,0 +1,2 @@
+  feature/test c24ed2d Cambio en main.py desde feature/test
+* master       a2590bd Resuelve conflicto entre main y feature/test en main.py

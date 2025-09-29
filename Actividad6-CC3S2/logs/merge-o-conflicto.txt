@@ -1,0 +1,11 @@
+Updating 886f10a..c24ed2d
+Fast-forward
+ main.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+[master a2590bd] Resuelve conflicto entre main y feature/test en main.py
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+=== PASOS DE RESOLUCIÓN ===
+1) Editar main.py para resolver marcadores de conflicto
+2) git add main.py
+3) git commit (finaliza el merge)

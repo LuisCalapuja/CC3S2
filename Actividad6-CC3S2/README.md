@@ -1,6 +1,6 @@
 # Actividad 6 – Evidencias
 
-### Qué incluye (resumen)
+### Resumen
 - `git config`: configuración de usuario; evidencia en `logs/config.txt`.
 - `git init` y `git status` inicial: evidencia en `logs/init-status.txt`.
 - `git add` + `git commit`: evidencia en `logs/add-commit.txt`.

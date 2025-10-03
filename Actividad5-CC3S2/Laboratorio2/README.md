@@ -192,3 +192,20 @@ Test falló: salida inesperada
 luis@LAPTOP-LC:/mnt/c/Users/Luis/Documents/CC3S2/Actividad5-CC3S2/Laboratorio2$ echo $?
 0
 ```
+4. Error por variable no definida:
+```bash
+luis@LAPTOP-LC:/mnt/c/Users/Luis/Documents/CC3S2/Actividad5-CC3S2/Laboratorio2$ ./scripts/run_tests.sh
+Demostrando pipefail:
+Sin pipefail: el pipe se considera exitoso (status 0).
+Con pipefail: se detecta el fallo (status != 0).
+Hello, Mundo!
+./scripts/run_tests.sh: line 45: output: unbound variable
+./scripts/run_tests.sh: line 19: wait_for: No record of process 2347
+Test falló: salida inesperada
+luis@LAPTOP-LC:/mnt/c/Users/Luis/Documents/CC3S2/Actividad5-CC3S2/Laboratorio2$ echo $?
+2
+```
+`output` nunca se asigna lo cual obliga a `set -u` a finalizar el script.
+
+## Parte 2: Leer
+- En `python3 src/hello.py > out/hello.txt` podemos ver las expansiones `$@` y `$<`. Vemos como `all` encadena tools (python3, shellcheck, shfmt, grep, awk, tar), 
